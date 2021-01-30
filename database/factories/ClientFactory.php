@@ -15,8 +15,7 @@ class ClientFactory extends Factory
             'name' => $this->faker->name,
             'cpf' => $this->faker->numerify('###.###.###/##'),
             'email' => $this->faker->unique()->freeEmail,
-            'phone' => $this->faker->numerify('(17)9####-####'),
-            'password' => $this->faker->regexify('[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}')
+            'phone' => $this->faker->numerify('(17)9####-####')
         ];
     }
 }

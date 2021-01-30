@@ -18,8 +18,7 @@ class CreateClientRequest extends FormRequest
             'name' => 'string|required',
             'cpf' => 'required|unique:clients|size:11',
             'email' => 'required|unique:clients|email',
-            'phone' => 'present|string|unique:clients|nullable',
-            'password' => 'required|min:4'
+            'phone' => 'present|string|unique:clients|nullable'
         ];
     }
 }
