@@ -18,6 +18,9 @@ Route::group([
 
 });
 
+Route::get('/', function(){
+    return response()->json('conect');
+});
 Route::post('/user', [UserController::class, 'create']);
 Route::post('/users/{user}/client', [ClientController::class, 'create']);
 Route::post('/clients/{client}/vehicle', [VehicleController::class, 'create']);
