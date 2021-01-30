@@ -17,7 +17,7 @@ class CreateClientRequest extends FormRequest
         return [
             'name' => 'string|required',
             'cpf' => 'required|unique:clients|size:11',
-            'email' => 'required|unique:clients|email',
+            'email' => 'unique:clients|email',
             'phone' => 'present|string|unique:clients|nullable'
         ];
     }
